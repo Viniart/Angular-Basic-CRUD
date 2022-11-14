@@ -1,0 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="enviarDados()">
+  <div class="main">
+    <div class="input-fields">
+      <input name="nome" ngModel placeholder="Nome" id="nome" formControlName="nome" type="text" class="input-field" />
+    </div>
+    <div class="input-fields">
+      <input formControlName="email" name="email" ngModel placeholder="Email" id="email" type="text" class="input-field" />
+    </div>
+    <button type="submit">Cadastrar</button>
+  </div>
+</form>
